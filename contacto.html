@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IEmedge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form action="" method="POST">
+            <div>
+                <label for="">Nombre:*</label>
+                <input type="text" name="txtNombre" id="txtNombre" required>
+            </div>
+            <div>
+                <label for="">Correo:*</label>
+                <input type="email" name="txtCorreo" id="txtCorreo" required>
+            </div>
+            <div>
+                <label for="">Teléfono:*</label>
+                <input type="tel" name="txtTeléfono" id="txtTeléfono" placeholder="(cod) 11 9999-9999" required>
+            </div>
+            <div>
+                <label for="">Fecha de nacimiento:*</label>
+                <input type="date" name="txtFecha" id="txtFecha" required>
+            </div>
+            <div>
+                <label for="IstPaís">País:</label>
+                <select name="IstPaís" id="IstPais">
+                    <option disable selected>Seleccionar</option>
+                    <optgroup label="Sudamerica">
+                        <option value=54>Argentina</option>
+                        <option value=55>Brasil</option>
+                        <option value=54>Colombia</option>
+                        <option value=54>Venezuela</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value=34>España</option>
+                        <option value=33>Francia</option>
+                        <option value=49>Alemania</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="IstAsunto">Asunto*:</label>
+                <select name="IstAsunto" id="IstAsunto" required>
+                    <option disable selected>Seleccionar</option>
+                    <option value=Ventas>Ventas</option>
+                    <option value=Soporte>Soporte</option>
+                    <option value=Webmaster>Webmaster</option>
+                </select>
+            </div>
+            <div>
+                <label for="txtMensaje">Mensaje*:</label>
+                <textarea name="txtMensaje" id="txtMensaje">Escribir aquí...</textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="chknewsletter" id="chknewsletter" checked>
+                <label for="chknewsletter">Deseo recibir mensajes sobre novedades</label>
+            </div>
+            <div>
+                <input type="checkbox" name="chkCondiciones" id="chkCondiciones" checked>
+                <label for="chkCondiciones">Acepto términos y condiciones</label>
+            </div>
+            <div class="opciones">
+                <label>¿Sos mayor de edad?</label>
+                <label for="optMayorSi">Si</label>
+                <input type="radio" name="optMayorEdad" id="optMayorSi">
+
+                <label for="optMayorNo">No</label>
+                <input type="radio" name="optMayorEdad" id="optMayorNo">
+            </div>
+            <div>
+                <button type="submit" name="btnEnviar" id="btnEnviar">ENVIAR</button>
+            </div>
+    
+        </form>
+    </main>
+        <footer>
+            <a href="https://wa.me/message/WXCCC6HHNPDJA1" target="_blank" title="Envianos un whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/channel/UCHAp2dWpPrqBU8L6uSEt1jQ" target="_blank" title="Seguinos en youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ko.plano" target="_blank" title="Seguinos en instagram"><i class="fa-brands fa-instagram"></i></a>
+        </footer>
+</body>
+
+</html>
